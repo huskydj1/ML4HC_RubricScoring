@@ -64,6 +64,10 @@ Our framework assesses notes using a comprehensive rubric including:
 
 This repository includes labeling and synthetic data for one patient as a reference example. All patient data is synthetic and created for demonstration purposes only. No real patient information is included.
 
+### Note on Notebooks
+
+The Jupyter notebooks in this repository are provided primarily for visualization of the code and methodology. They are not set up to run directly in Colab or other environments as they require specific dependencies and data paths. The notebooks serve as reference implementations to understand our approach.
+
 ### Contributors
 
 - Davin Jeong (Harvard)
