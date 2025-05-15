@@ -17,7 +17,7 @@ Contains the prompts used in our framework:
 - **RAG_PROMPT.txt**: Used for retrieval-augmented generation evaluation
 - **PRESENCE_LABELING_PROMPT.txt**: Used for automatic labeling of medical concepts in transcripts and notes
 
-#### `/Presence Labeling Evaluation`
+#### `/Concept Labeling`
 
 Contains notebooks and data showing LLM-based concept labeling:
 
@@ -27,7 +27,7 @@ Contains notebooks and data showing LLM-based concept labeling:
 
 This directory displays the automated LLM labeling process for one synthetic patient case as a reference example.
 
-#### `/Post-processing Rubric Scoring`
+#### `/Rubric Assessment`
 
 Includes notebooks and manually labeled data for evaluating and scoring clinical notes:
 
