@@ -17,24 +17,29 @@ Contains the prompts used in our framework:
 - **RAG_PROMPT.txt**: Used for retrieval-augmented generation evaluation
 - **PRESENCE_LABELING_PROMPT.txt**: Used for automatic labeling of medical concepts in transcripts and notes
 
-#### `/Presence Labelling`
+#### `/Presence Labeling Evaluation`
 
-Contains notebooks and data for examining the automatic labeling process:
+Contains notebooks and data showing LLM-based concept labeling:
 
 - **Scoring Presence Accuracy.ipynb**: Analysis of concept presence in transcripts and notes
-- **Patient 2 [label YES, NO, MISSING] - GPT-Labeled-LLM_Note (Bolanle).csv**: Labeled LLM-generated note
-- **Patient 2 [label YES, NO, MISSING] - GPT-Labled-Transcript (Waris).csv**: Labeled transcript
-- **data/**: Directory containing source transcripts and notes
+- **LLM-Labeled LLM Note.csv**: LLM-generated note with concept presence labels (automatically labeled by the LLM)
+- **LLM-Labeled Patient Transcript.csv**: Patient consultation transcript with concept presence labels (automatically labeled by the LLM)
 
-#### `/Rubric Scoring`
+This directory displays the automated LLM labeling process for one synthetic patient case as a reference example.
 
-Includes notebooks for evaluating and scoring the clinical notes:
+#### `/Post-processing Rubric Scoring`
+
+Includes notebooks and manually labeled data for evaluating and scoring clinical notes:
 
 - **Patient2_Scoring.ipynb**: Analysis and scoring of patient notes across key categories:
   - Completeness/Sensitivity: Measures inclusion of relevant information from transcripts
   - Curation/Specificity: Evaluates exclusion of irrelevant information
   - Correctness (Hallucination): Detects invented content not present in source
   - Correctness (Knowledge Gap): Identifies inconsistencies between note and source
+- **Manual-Labeled Transcript.csv**: Manually labeled patient transcript
+- **Manual-Labeled LLM Note.csv**: Manually labeled LLM-generated note
+
+The scoring process is demonstrated using manually labeled synthetic data from one patient case for reference.
 
 #### `/documents`
 
@@ -54,6 +59,10 @@ Our framework assesses notes using a comprehensive rubric including:
   - Bias: Expression of bias toward the patient
 - Patient Safety Risk: Absence of errors that could impact patient care
 - Clinical Usefulness: Minimal corrections needed before signing
+
+### Note on Data
+
+This repository includes labeling and synthetic data for one patient as a reference example. All patient data is synthetic and created for demonstration purposes only. No real patient information is included.
 
 ### Contributors
 
