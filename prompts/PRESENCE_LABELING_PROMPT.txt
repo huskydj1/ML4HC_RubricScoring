@@ -1,0 +1,11 @@
+FOR EACH CONCEPT:
+
+LLM PROMPT:
+[Full Text] (Transcript OR AI-generated Note)
+
+“Assuming you are a knowledgeable and detail-oriented medical doctor, 
+in what sections of the provided text, if any, is there a mention of [concept]? 
+If the text does contain mention of [concept], is the text suggesting that the patient is positive or negative with the concept, or is there no mention?
+Limit your reply to the following (Positive, Negative, Missing). 
+If Positive or Negative, show the portion of the text that mentions it.” 
+========================================================================
